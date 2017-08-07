@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67B7056C1F386095000E30CC /* AbroadFromDestTable.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67B705661F386095000E30CC /* AbroadFromDestTable.plist */; };
+		67B7056D1F386095000E30CC /* data.db in Resources */ = {isa = PBXBuildFile; fileRef = 67B705671F386095000E30CC /* data.db */; };
+		67B7056E1F386095000E30CC /* FromDestTable.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67B705681F386095000E30CC /* FromDestTable.plist */; };
+		67B7056F1F386095000E30CC /* HotelLandmarksTable.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67B705691F386095000E30CC /* HotelLandmarksTable.plist */; };
+		67B705701F386095000E30CC /* LvmmTables.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 67B7056A1F386095000E30CC /* LvmmTables.sqlite */; };
+		67B705711F386095000E30CC /* MicroTourFromDestTable.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67B7056B1F386095000E30CC /* MicroTourFromDestTable.plist */; };
 		78F241011D7FE0550022CD22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F241001D7FE0550022CD22 /* AppDelegate.swift */; };
 		78F241031D7FE0550022CD22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F241021D7FE0550022CD22 /* ViewController.swift */; };
 		78F241061D7FE0550022CD22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78F241041D7FE0550022CD22 /* Main.storyboard */; };
@@ -19,6 +25,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67B705661F386095000E30CC /* AbroadFromDestTable.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AbroadFromDestTable.plist; sourceTree = "<group>"; };
+		67B705671F386095000E30CC /* data.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.db; sourceTree = "<group>"; };
+		67B705681F386095000E30CC /* FromDestTable.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FromDestTable.plist; sourceTree = "<group>"; };
+		67B705691F386095000E30CC /* HotelLandmarksTable.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HotelLandmarksTable.plist; sourceTree = "<group>"; };
+		67B7056A1F386095000E30CC /* LvmmTables.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = LvmmTables.sqlite; sourceTree = "<group>"; };
+		67B7056B1F386095000E30CC /* MicroTourFromDestTable.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MicroTourFromDestTable.plist; sourceTree = "<group>"; };
 		78F240FD1D7FE0550022CD22 /* SQLiteManagerSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SQLiteManagerSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78F241001D7FE0550022CD22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78F241021D7FE0550022CD22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,10 +57,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67B705621F347CEA000E30CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				78F241131D7FE1180022CD22 /* SQLite-Bridge.h */,
+				78F241041D7FE0550022CD22 /* Main.storyboard */,
+				78F241071D7FE0550022CD22 /* Assets.xcassets */,
+				78F241091D7FE0550022CD22 /* LaunchScreen.storyboard */,
+				78F2410C1D7FE0550022CD22 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		67B705651F386095000E30CC /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				67B705661F386095000E30CC /* AbroadFromDestTable.plist */,
+				67B705671F386095000E30CC /* data.db */,
+				67B705681F386095000E30CC /* FromDestTable.plist */,
+				67B705691F386095000E30CC /* HotelLandmarksTable.plist */,
+				67B7056A1F386095000E30CC /* LvmmTables.sqlite */,
+				67B7056B1F386095000E30CC /* MicroTourFromDestTable.plist */,
+			);
+			name = DataBase;
+			path = SQLiteManagerSwiftDemo/DataBase;
+			sourceTree = "<group>";
+		};
 		78F240F41D7FE0540022CD22 = {
 			isa = PBXGroup;
 			children = (
 				78F241191D7FE1300022CD22 /* libsqlite3.tbd */,
+				67B705651F386095000E30CC /* DataBase */,
 				78F240FF1D7FE0550022CD22 /* SQLiteManagerSwiftDemo */,
 				78F240FE1D7FE0550022CD22 /* Products */,
 			);
@@ -65,16 +104,12 @@
 		78F240FF1D7FE0550022CD22 /* SQLiteManagerSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
-				78F241151D7FE1180022CD22 /* String+Category.swift */,
-				78F241131D7FE1180022CD22 /* SQLite-Bridge.h */,
-				78F241121D7FE1180022CD22 /* Person.swift */,
-				78F241141D7FE1180022CD22 /* SQLiteManager.swift */,
-				78F241021D7FE0550022CD22 /* ViewController.swift */,
 				78F241001D7FE0550022CD22 /* AppDelegate.swift */,
-				78F241041D7FE0550022CD22 /* Main.storyboard */,
-				78F241071D7FE0550022CD22 /* Assets.xcassets */,
-				78F241091D7FE0550022CD22 /* LaunchScreen.storyboard */,
-				78F2410C1D7FE0550022CD22 /* Info.plist */,
+				78F241151D7FE1180022CD22 /* String+Category.swift */,
+				78F241141D7FE1180022CD22 /* SQLiteManager.swift */,
+				78F241121D7FE1180022CD22 /* Person.swift */,
+				78F241021D7FE0550022CD22 /* ViewController.swift */,
+				67B705621F347CEA000E30CC /* Supporting Files */,
 			);
 			path = SQLiteManagerSwiftDemo;
 			sourceTree = "<group>";
@@ -106,11 +141,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = SaiDicaprio;
 				TargetAttributes = {
 					78F240FC1D7FE0550022CD22 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 7R3MSEN8NJ;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -137,7 +174,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67B705701F386095000E30CC /* LvmmTables.sqlite in Resources */,
+				67B705711F386095000E30CC /* MicroTourFromDestTable.plist in Resources */,
+				67B7056F1F386095000E30CC /* HotelLandmarksTable.plist in Resources */,
+				67B7056C1F386095000E30CC /* AbroadFromDestTable.plist in Resources */,
 				78F2410B1D7FE0550022CD22 /* LaunchScreen.storyboard in Resources */,
+				67B7056D1F386095000E30CC /* data.db in Resources */,
+				67B7056E1F386095000E30CC /* FromDestTable.plist in Resources */,
 				78F241081D7FE0550022CD22 /* Assets.xcassets in Resources */,
 				78F241061D7FE0550022CD22 /* Main.storyboard in Resources */,
 			);
@@ -194,8 +237,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -239,8 +284,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -259,6 +306,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -267,11 +315,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7R3MSEN8NJ;
 				INFOPLIST_FILE = SQLiteManagerSwiftDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SaiDicaprio.SQLiteManagerSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SQLiteManagerSwiftDemo/SQLite-Bridge.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -279,11 +330,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7R3MSEN8NJ;
 				INFOPLIST_FILE = SQLiteManagerSwiftDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SaiDicaprio.SQLiteManagerSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SQLiteManagerSwiftDemo/SQLite-Bridge.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
